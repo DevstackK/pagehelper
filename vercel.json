@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "api/answer.mjs": { "maxDuration": 10 },
+    "api/stripe-webhook.mjs": { "maxDuration": 10 }
+  }
+}

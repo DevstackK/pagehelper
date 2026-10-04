@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page Answer Helper — Sign in</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f5f0;color:#192c28;font:14px/1.55 system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}
+.card{max-width:380px;width:100%;padding:28px;background:#fff;border:1px solid #d9ded4;border-radius:14px}
+h1{font-size:22px;margin:0 0 6px}
+p{color:#607169;margin:0 0 18px}
+input{width:100%;border:1px solid #d9ded4;border-radius:8px;padding:12px;font:14px/1.5 system-ui;margin-bottom:12px}
+button{cursor:pointer;border:0;border-radius:10px;background:#c7ef98;color:#193829;padding:12px 16px;width:100%;font-weight:700;font-size:14px}
+button:disabled{opacity:.5;cursor:wait}
+#status{margin-top:14px;font-size:13px;color:#607169}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Page Answer Helper</h1>
+  <p id="intro">Sign in with your email. We'll send a one-time link — no password needed.</p>
+  <form id="form">
+    <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+    <button id="submit" type="submit">Send magic link</button>
+  </form>
+  <p id="status" role="status" aria-live="polite"></p>
+</div>
+<script src="login.js"></script>
+</body>
+</html>

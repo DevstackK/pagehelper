@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Page Answer Helper",
+  "version": "0.1.6",
+  "description": "Scan questions, select answers, and advance through supported pages.",
+  "minimum_chrome_version": "116",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqNz2SCZP0bZvdlWn/+PWiR+ZIciDNqG6X64TcVaWsQaX1kbcFp6hS0Y7GvhgA3QhRrmsdk7ZeB5fMiT2gyP+qcrt0gsVooEx0eUy1hnITdpgvsEzNAk+Eq6e/X+9Vm6QAQe9MbFVbRtY1oNAip3KlGGm/9BXnbALs0RqVdQ/JyrFVSqp/dTvaVz+fbpRtqVobK8krZwvrxxd2wHmczAn3PmfTu1XO9OHFMUbmFh2jW662nhnSip4Nbb+VJbUFODfk/ZKBy1/eTB17usLUjPhstqeeDtugo4OGsAY163Qo6uvyl1XFpN9AAPc0Nesr/k1/YGgHBQwoliBoj8hmkXU2QIDAQAB",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://page-answer-helper.vercel.app/*",
+    "http://localhost:3000/*"
+  ],
+  "externally_connectable": {
+    "matches": ["https://page-answer-helper.vercel.app/*"]
+  },
+  "action": {
+    "default_title": "Open Page Answer Helper"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
